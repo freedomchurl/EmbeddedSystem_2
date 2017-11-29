@@ -23,7 +23,8 @@
             </intent-filter>
         </activity>
         
-        <activity android:name=".ControlleeActivity"/>
+        <activity android:name=".ControlleeActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
     </application>
 
 </manifest>
