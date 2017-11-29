@@ -29,6 +29,7 @@
             android:layout_weight="1"/>
 
 
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -44,10 +45,49 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="나의 IP주소 - 192.168.0.1"
+                    android:background="#585858"
+                    android:gravity="center"
+                    android:textSize="12dp"
+                    android:textColor="#ffffff"
+                    android:id="@+id/myipAddress"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_weight="1"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:text="모드 설정"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:textSize="10dp"
+                    android:background="#585858"/>
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:textSize="12dp"
+                    android:background="#ffffff"
+                    android:text="읽기 전용 모드(Read Only Mode)" />
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
                 <!--디바이스 이름-->
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="20dp"
+                    android:layout_height="25dp"
                     android:text="디바이스 이름"
                     android:textColor="#ffffff"
                     android:gravity="center"
@@ -59,18 +99,18 @@
                     android:layout_height="35dp"
                     android:hint="상대방에게 보일 디바이스 이름을 입력하세요"
                     android:textSize="11dp"
-                    android:paddingLeft="5dp"
+                    android:paddingLeft="10dp"
                     android:inputType="text"
                     android:background="#ffffff"/>
 
                 <android.support.v4.widget.Space
                     android:layout_width="match_parent"
-                    android:layout_height="10dp" />
+                    android:layout_height="15dp" />
 
                 <!-- 디바이스 비밀번호 설정 -->
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="20dp"
+                    android:layout_height="25dp"
                     android:text="디바이스 비밀번호"
                     android:textColor="#ffffff"
                     android:gravity="center"
@@ -83,16 +123,38 @@
                     android:hint="보안을 위한 디바이스 비밀번호를 입력하세요"
                     android:textSize="11dp"
                     android:inputType="textPassword"
-                    android:paddingLeft="5dp"
+                    android:paddingLeft="10dp"
                     android:background="#ffffff"/>
 
                 <android.support.v4.widget.Space
                     android:layout_width="match_parent"
-                    android:layout_height="10dp" />
+                    android:layout_height="15dp" />
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="20dp"
+                    android:layout_height="25dp"
+                    android:text="포트 번호 설정"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:textSize="10dp"
+                    android:background="#585858"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:hint="통신을 실시할 포트번호를 적으세요"
+                    android:textSize="11dp"
+                    android:paddingLeft="10dp"
+                    android:inputType="numberDecimal"
+                    android:background="#ffffff"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
                     android:text="디바이스 대표 아이콘"
                     android:textColor="#ffffff"
                     android:gravity="center"
@@ -110,6 +172,7 @@
 
 
                 </GridView>
+
 
 
 
